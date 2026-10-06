@@ -1,0 +1,50 @@
+{% extends 'layout.html.twig' %}
+
+{% set _entity_config = easyadmin_entity(app.request.query.get('entity')) %}
+{% trans_default_domain _entity_config.translation_domain %}
+{% set _trans_parameters = { '%entity_name%': _entity_config.name|trans, '%entity_label%': _entity_config.label|trans } %}
+
+{% block content_header %}
+    <div class="content-header-title">
+        <h1 class="title">{{ headline|trans }}</h1> ({{ total }} images trop lourdes > 500ko)
+    </div>
+{% endblock %}
+
+{% block main %}
+<table class="table datagrid sortable">
+    <thead>
+        <tr>
+            <th>
+                <span>Poids Original</span>
+            </th>
+            <th>
+                <span>Poids Webp</span>
+            </th>
+            <th>
+                <span>Dimensions</span>
+            </th>
+            <th>
+                <span>Image</span>
+            </th>
+            <!-- <th>
+                <span>Format</span>
+            </th> -->
+            <th>
+                <span>Download Date</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    	{% for item in currentPageResults %}
+    	<tr>
+            <td>{{ item.original_taille }}</td>
+            <td>{{ item.webp_taille }}</td>
+            <td>{{ item.dimensions }}</td>
+            <td>{{ item.filename }}</td>
+
+    		<td>{{ item.createdAt }}</td>
+    	</tr>
+    	{% endfor %}
+    </tbody>
+</table>
+{% endblock main %}

@@ -1,0 +1,9 @@
+vich_uploader:
+    db_driver: orm
+    mappings:
+        uploads_media_files:
+            uri_prefix:         '%assets.media.folder%'
+            upload_destination: '%DIRECTORY_RESOURCES%/%assets.media.folder%'
+        uploads_document_files:
+            uri_prefix:         '%assets.document.folder%'
+            upload_destination: '%DIRECTORY_RESOURCES%/%assets.document.folder%'

@@ -1,0 +1,16 @@
+{
+  "hydra:member": [
+    {
+      "slug": "conseils",
+      "name": "Conseils",
+      "isActive": true
+    },
+    {
+      "slug": "nos-services",
+      "name": "Nos services",
+      "isActive": true
+    }
+  ],
+  "hydra:totalItems": 2,
+  "hydra:view": {}
+}

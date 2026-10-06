@@ -1,0 +1,310 @@
+liip_imagine:
+    resolvers:
+        default:
+            web_path:
+                web_root: '%assets.path%'
+                cache_prefix: '%assets.cache_prefix%'
+    driver: gd
+    
+    loaders:
+        default:
+            filesystem:
+                data_root: '%assets.path%'
+                # locator: filesystem_insecure
+    
+    filter_sets:
+        original:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            filters:
+                # use and setup the "resample" filter
+                resample:
+
+                    # set the unit to use for pixel density
+                    unit: ppi
+
+                    # set the horizontal pixel density
+                    x: 72
+
+                    # set the vertical pixel density
+                    y: 72
+
+                    # set the resampling filter
+                    filter: lanczos
+
+                    # set the temporary path to use for resampling work
+                    temp_dir: "%assets.path%/tmp"
+            post_processors:
+                jpegoptim: { strip_all: true, max: 70, progressive: true }
+        mini_thumbnail:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                thumbnail:
+                    size:          [65, 40]
+                    mode:          outbound
+                    allow_upscale: true
+        grid:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # use and setup the "watermark" filter
+                watermark:
+                    # path to the watermark file (prepended with "%kernel.root_dir%")
+                    image: "%DIRECTORY_STAMP%/stamp.png"
+                    # size of the water mark relative to the input image
+                    size: 0.25
+                    # set the position of the watermark
+                    position: center
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [800, 500]
+                    mode:          outbound
+                    allow_upscale: true
+        grid_nostamp:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [800, 500]
+                    mode:          outbound
+                    allow_upscale: true
+        grid_small:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # use and setup the "watermark" filter
+                watermark:
+                    # path to the watermark file (prepended with "%kernel.root_dir%")
+                    image: "%DIRECTORY_STAMP%/stamp.png"
+                    # size of the water mark relative to the input image
+                    size: 0.25
+                    # set the position of the watermark
+                    position: center
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [290, 182]
+                    mode:          outbound
+                    allow_upscale: true
+        grid_small_nostamp:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [290, 182]
+                    mode:          outbound
+                    allow_upscale: true
+        vertical:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+               # use and setup the "watermark" filter
+                watermark:
+                    # path to the watermark file (prepended with "%kernel.root_dir%")
+                    image: "%DIRECTORY_STAMP%/stamp.png"
+                    # size of the water mark relative to the input image
+                    size: 0.25
+                    # set the position of the watermark
+                    position: center
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [360, 552]
+                    mode:          outbound
+                    allow_upscale: true
+        vertical_nostamp:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [360, 552]
+                    mode:          outbound
+                    allow_upscale: true
+        vertical_large:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # use and setup the "watermark" filter
+                watermark:
+                    # path to the watermark file (prepended with "%kernel.root_dir%")
+                    image: "%DIRECTORY_STAMP%/stamp.png"
+                    # size of the water mark relative to the input image
+                    size: 0.25
+                    # set the position of the watermark
+                    position: center
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [455, 724]
+                    mode:          outbound
+                    allow_upscale: true
+        vertical_large_nostamp:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [455, 724]
+                    mode:          outbound
+                    allow_upscale: true
+
+        large_nostamp:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [1920]
+                    mode:          outbound
+                    allow_upscale: true
+        large:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # use and setup the "watermark" filter
+                watermark:
+                    # path to the watermark file (prepended with "%kernel.root_dir%")
+                    image: "%DIRECTORY_STAMP%/stamp.png"
+                    # size of the water mark relative to the input image
+                    size: 0.25
+                    # set the position of the watermark
+                    position: center
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [1920]
+                    mode:          outbound
+                    allow_upscale: true
+        team_square:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [555, 555]
+                    mode:          outbound
+                    allow_upscale: true
+        team_square_medium:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [345, 345]
+                    mode:          outbound
+                    allow_upscale: true
+        team_square_small:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [300, 300]
+                    mode:          outbound
+                    allow_upscale: true
+        blog_horizontal:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [555, 250]
+                    mode:          outbound
+                    allow_upscale: true
+        blog_horizontal_small:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [345, 250]
+                    mode:          outbound
+                    allow_upscale: true
+        blog:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [555, 530]
+                    mode:          outbound
+                    allow_upscale: true
+        blog_vertical:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [345, 530]
+                    mode:          outbound
+                    allow_upscale: true
+        carousel:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [555, 345]
+                    mode:          outbound
+                    allow_upscale: true
+        carousel_medium:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [470, 293]
+                    mode:          outbound
+                    allow_upscale: true
+        carousel_small:
+            # set your image quality defaults
+            jpeg_quality:          70
+            png_compression_level: 7
+            # setup the filter steps to apply for this transformation
+            filters:
+                # scale and square the image to the given dimensions
+                thumbnail:
+                    size:          [345, 250]
+                    mode:          outbound
+                    allow_upscale: true

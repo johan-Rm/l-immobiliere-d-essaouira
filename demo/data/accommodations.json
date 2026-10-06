@@ -1,0 +1,559 @@
+{
+  "hydra:member": [
+    {
+      "id": 1,
+      "slug": "bien-demo-1",
+      "headline": "Appartement de démonstration",
+      "name": "Appartement de démonstration",
+      "alternativeHeadline": "Appartement de démonstration",
+      "pushForward": "Démonstration du projet",
+      "text": "<p>Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.</p>",
+      "textResume": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "articleBody": "<p>Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.</p>",
+      "articleResume": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "description": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "metaTitle": "Appartement de démonstration",
+      "metaDescription": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "isActive": true,
+      "primaryImage": {
+        "filename": "demo.svg",
+        "url": "/demo.svg",
+        "alt": "Illustration de démonstration",
+        "dimensions": [
+          1200,
+          800
+        ],
+        "hideStamp": true
+      },
+      "secondaryImage": {
+        "filename": "demo.svg",
+        "url": "/demo.svg",
+        "alt": "Illustration de démonstration",
+        "dimensions": [
+          1200,
+          800
+        ],
+        "hideStamp": true
+      },
+      "gallery": {
+        "imageGalleries": [
+          {
+            "image": {
+              "filename": "demo.svg",
+              "url": "/demo.svg",
+              "alt": "Illustration de démonstration",
+              "dimensions": [
+                1200,
+                800
+              ],
+              "hideStamp": true
+            },
+            "position": 1
+          }
+        ]
+      },
+      "galleryVertical": {
+        "imageGalleries": [
+          {
+            "image": {
+              "filename": "demo.svg",
+              "url": "/demo.svg",
+              "alt": "Illustration de démonstration",
+              "dimensions": [
+                1200,
+                800
+              ],
+              "hideStamp": true
+            },
+            "position": 1
+          }
+        ]
+      },
+      "category": {
+        "slug": "conseils",
+        "name": "Conseils",
+        "isActive": true
+      },
+      "tags": [
+        {
+          "slug": "nos-services",
+          "name": "Nos services",
+          "isActive": true
+        }
+      ],
+      "videos": [],
+      "components": [],
+      "comments": [],
+      "media": [],
+      "blockquote": "",
+      "blockquoteTitle": "",
+      "hideStamp": true,
+      "datePublished": "2026-01-01",
+      "dateCreated": "2026-01-01",
+      "dateModified": "2026-01-01",
+      "url": "/bien-demo-1",
+      "webPages": [],
+      "reference": "DEMO-1",
+      "numberOfPieces": 3,
+      "numberOfRooms": 2,
+      "numberOfBathrooms": 1,
+      "maximumOccupants": 4,
+      "floorSize": 85,
+      "areaSize": 100,
+      "areaTerrace": 15,
+      "price": 180000,
+      "labelPrice": "",
+      "place": {
+        "slug": "quartier-demo",
+        "name": "Quartier fictif",
+        "isActive": true,
+        "location": {
+          "slug": "ville-demo",
+          "name": "Ville de démonstration",
+          "isActive": true
+        }
+      },
+      "nature": {
+        "slug": "vente",
+        "name": "Vente",
+        "isActive": true
+      },
+      "type": {
+        "slug": "appartement",
+        "name": "Appartement",
+        "isActive": true,
+        "id": 1,
+        "isLocation": false
+      },
+      "duration": {
+        "slug": "longue-duree",
+        "name": "Longue durée",
+        "isActive": true
+      },
+      "label": {
+        "slug": "coup-de-coeur",
+        "name": "Sélection démo",
+        "isActive": true
+      },
+      "realEstateAgent": {
+        "@id": "/api/real_estate_agents/demo",
+        "id": 1,
+        "name": "Équipe de démonstration",
+        "description": "Profil fictif",
+        "phone": "",
+        "email": "contact@example.invalid",
+        "primaryImage": {
+          "filename": "avatar.svg",
+          "url": "/avatar.svg",
+          "alt": "Illustration de démonstration",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "hideStamp": true
+        },
+        "person": {
+          "firstname": "Alex",
+          "lastname": "Démo",
+          "phone": "",
+          "email": "contact@example.invalid",
+          "jobTitle": "Conseiller",
+          "position": {
+            "slug": "conseiller",
+            "name": "Conseiller",
+            "isActive": true
+          },
+          "contactRole": "transactions"
+        }
+      },
+      "rentalPriceType": null,
+      "amenities": [],
+      "details": [],
+      "pdfs": [],
+      "rentals": [],
+      "informations": [],
+      "ourOpinion": "Bien entièrement fictif",
+      "urbanTaxes": 0,
+      "unionCharges": 0,
+      "turnover": 0,
+      "geo": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "pdfUrl": "",
+      "websiteUrl": ""
+    },
+    {
+      "id": 2,
+      "slug": "bien-demo-2",
+      "headline": "Maison de démonstration",
+      "name": "Maison de démonstration",
+      "alternativeHeadline": "Maison de démonstration",
+      "pushForward": "Démonstration du projet",
+      "text": "<p>Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.</p>",
+      "textResume": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "articleBody": "<p>Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.</p>",
+      "articleResume": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "description": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "metaTitle": "Maison de démonstration",
+      "metaDescription": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "isActive": true,
+      "primaryImage": {
+        "filename": "demo.svg",
+        "url": "/demo.svg",
+        "alt": "Illustration de démonstration",
+        "dimensions": [
+          1200,
+          800
+        ],
+        "hideStamp": true
+      },
+      "secondaryImage": {
+        "filename": "demo.svg",
+        "url": "/demo.svg",
+        "alt": "Illustration de démonstration",
+        "dimensions": [
+          1200,
+          800
+        ],
+        "hideStamp": true
+      },
+      "gallery": {
+        "imageGalleries": [
+          {
+            "image": {
+              "filename": "demo.svg",
+              "url": "/demo.svg",
+              "alt": "Illustration de démonstration",
+              "dimensions": [
+                1200,
+                800
+              ],
+              "hideStamp": true
+            },
+            "position": 1
+          }
+        ]
+      },
+      "galleryVertical": {
+        "imageGalleries": [
+          {
+            "image": {
+              "filename": "demo.svg",
+              "url": "/demo.svg",
+              "alt": "Illustration de démonstration",
+              "dimensions": [
+                1200,
+                800
+              ],
+              "hideStamp": true
+            },
+            "position": 1
+          }
+        ]
+      },
+      "category": {
+        "slug": "conseils",
+        "name": "Conseils",
+        "isActive": true
+      },
+      "tags": [
+        {
+          "slug": "nos-services",
+          "name": "Nos services",
+          "isActive": true
+        }
+      ],
+      "videos": [],
+      "components": [],
+      "comments": [],
+      "media": [],
+      "blockquote": "",
+      "blockquoteTitle": "",
+      "hideStamp": true,
+      "datePublished": "2026-01-01",
+      "dateCreated": "2026-01-01",
+      "dateModified": "2026-01-01",
+      "url": "/bien-demo-2",
+      "webPages": [],
+      "reference": "DEMO-2",
+      "numberOfPieces": 3,
+      "numberOfRooms": 2,
+      "numberOfBathrooms": 1,
+      "maximumOccupants": 4,
+      "floorSize": 85,
+      "areaSize": 100,
+      "areaTerrace": 15,
+      "price": 240000,
+      "labelPrice": "",
+      "place": {
+        "slug": "quartier-demo",
+        "name": "Quartier fictif",
+        "isActive": true,
+        "location": {
+          "slug": "ville-demo",
+          "name": "Ville de démonstration",
+          "isActive": true
+        }
+      },
+      "nature": {
+        "slug": "vente",
+        "name": "Vente",
+        "isActive": true
+      },
+      "type": {
+        "slug": "appartement",
+        "name": "Appartement",
+        "isActive": true,
+        "id": 1,
+        "isLocation": false
+      },
+      "duration": {
+        "slug": "longue-duree",
+        "name": "Longue durée",
+        "isActive": true
+      },
+      "label": {
+        "slug": "coup-de-coeur",
+        "name": "Sélection démo",
+        "isActive": true
+      },
+      "realEstateAgent": {
+        "@id": "/api/real_estate_agents/demo",
+        "id": 1,
+        "name": "Équipe de démonstration",
+        "description": "Profil fictif",
+        "phone": "",
+        "email": "contact@example.invalid",
+        "primaryImage": {
+          "filename": "avatar.svg",
+          "url": "/avatar.svg",
+          "alt": "Illustration de démonstration",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "hideStamp": true
+        },
+        "person": {
+          "firstname": "Alex",
+          "lastname": "Démo",
+          "phone": "",
+          "email": "contact@example.invalid",
+          "jobTitle": "Conseiller",
+          "position": {
+            "slug": "conseiller",
+            "name": "Conseiller",
+            "isActive": true
+          },
+          "contactRole": "transactions"
+        }
+      },
+      "rentalPriceType": null,
+      "amenities": [],
+      "details": [],
+      "pdfs": [],
+      "rentals": [],
+      "informations": [],
+      "ourOpinion": "Bien entièrement fictif",
+      "urbanTaxes": 0,
+      "unionCharges": 0,
+      "turnover": 0,
+      "geo": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "pdfUrl": "",
+      "websiteUrl": ""
+    },
+    {
+      "id": 3,
+      "slug": "bien-demo-3",
+      "headline": "Location de démonstration",
+      "name": "Location de démonstration",
+      "alternativeHeadline": "Location de démonstration",
+      "pushForward": "Démonstration du projet",
+      "text": "<p>Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.</p>",
+      "textResume": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "articleBody": "<p>Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.</p>",
+      "articleResume": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "description": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "metaTitle": "Location de démonstration",
+      "metaDescription": "Ce contenu et les biens présentés sont fictifs. Cette démonstration illustre les fonctionnalités du projet.",
+      "isActive": true,
+      "primaryImage": {
+        "filename": "demo.svg",
+        "url": "/demo.svg",
+        "alt": "Illustration de démonstration",
+        "dimensions": [
+          1200,
+          800
+        ],
+        "hideStamp": true
+      },
+      "secondaryImage": {
+        "filename": "demo.svg",
+        "url": "/demo.svg",
+        "alt": "Illustration de démonstration",
+        "dimensions": [
+          1200,
+          800
+        ],
+        "hideStamp": true
+      },
+      "gallery": {
+        "imageGalleries": [
+          {
+            "image": {
+              "filename": "demo.svg",
+              "url": "/demo.svg",
+              "alt": "Illustration de démonstration",
+              "dimensions": [
+                1200,
+                800
+              ],
+              "hideStamp": true
+            },
+            "position": 1
+          }
+        ]
+      },
+      "galleryVertical": {
+        "imageGalleries": [
+          {
+            "image": {
+              "filename": "demo.svg",
+              "url": "/demo.svg",
+              "alt": "Illustration de démonstration",
+              "dimensions": [
+                1200,
+                800
+              ],
+              "hideStamp": true
+            },
+            "position": 1
+          }
+        ]
+      },
+      "category": {
+        "slug": "conseils",
+        "name": "Conseils",
+        "isActive": true
+      },
+      "tags": [
+        {
+          "slug": "nos-services",
+          "name": "Nos services",
+          "isActive": true
+        }
+      ],
+      "videos": [],
+      "components": [],
+      "comments": [],
+      "media": [],
+      "blockquote": "",
+      "blockquoteTitle": "",
+      "hideStamp": true,
+      "datePublished": "2026-01-01",
+      "dateCreated": "2026-01-01",
+      "dateModified": "2026-01-01",
+      "url": "/bien-demo-3",
+      "webPages": [],
+      "reference": "DEMO-3",
+      "numberOfPieces": 3,
+      "numberOfRooms": 2,
+      "numberOfBathrooms": 1,
+      "maximumOccupants": 4,
+      "floorSize": 85,
+      "areaSize": 100,
+      "areaTerrace": 15,
+      "price": 850,
+      "labelPrice": "",
+      "place": {
+        "slug": "quartier-demo",
+        "name": "Quartier fictif",
+        "isActive": true,
+        "location": {
+          "slug": "ville-demo",
+          "name": "Ville de démonstration",
+          "isActive": true
+        }
+      },
+      "nature": {
+        "slug": "location",
+        "name": "Location",
+        "isActive": true
+      },
+      "type": {
+        "slug": "appartement",
+        "name": "Appartement",
+        "isActive": true,
+        "id": 1,
+        "isLocation": false
+      },
+      "duration": {
+        "slug": "longue-duree",
+        "name": "Longue durée",
+        "isActive": true
+      },
+      "label": {
+        "slug": "coup-de-coeur",
+        "name": "Sélection démo",
+        "isActive": true
+      },
+      "realEstateAgent": {
+        "@id": "/api/real_estate_agents/demo",
+        "id": 1,
+        "name": "Équipe de démonstration",
+        "description": "Profil fictif",
+        "phone": "",
+        "email": "contact@example.invalid",
+        "primaryImage": {
+          "filename": "avatar.svg",
+          "url": "/avatar.svg",
+          "alt": "Illustration de démonstration",
+          "dimensions": [
+            1200,
+            800
+          ],
+          "hideStamp": true
+        },
+        "person": {
+          "firstname": "Alex",
+          "lastname": "Démo",
+          "phone": "",
+          "email": "contact@example.invalid",
+          "jobTitle": "Conseiller",
+          "position": {
+            "slug": "conseiller",
+            "name": "Conseiller",
+            "isActive": true
+          },
+          "contactRole": "transactions"
+        }
+      },
+      "rentalPriceType": {
+        "slug": "mensuel",
+        "name": "Par mois",
+        "isActive": true
+      },
+      "amenities": [],
+      "details": [],
+      "pdfs": [],
+      "rentals": [],
+      "informations": [],
+      "ourOpinion": "Bien entièrement fictif",
+      "urbanTaxes": 0,
+      "unionCharges": 0,
+      "turnover": 0,
+      "geo": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "pdfUrl": "",
+      "websiteUrl": ""
+    }
+  ],
+  "hydra:totalItems": 3,
+  "hydra:view": {}
+}

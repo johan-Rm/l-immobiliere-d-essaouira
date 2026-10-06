@@ -1,0 +1,38 @@
+/*
+
+$secondary : #3e2723;
+$secondary_rgb : rgb(62,39,35);
+
+$primary : #79a3b1;
+$primary_rgb: rgb(121, 163, 177);
+
+$secondary_light : #88b4c3;
+
+$tertiary : #c2c8c8;
+
+*/
+
+
+$primary : var(--color-primary);
+$primary_rgb : var(--color-primary-rgb);
+
+$secondary : var(--color-secondary);
+$secondary_rgb: var(--color-secondary-rgb);
+
+$secondary_light : var(--color-secondary-light);
+
+$tertiary : var(--color-tertiary);
+
+
+/*
+
+$primary : #212121;
+
+$secondary : #4caf50;
+$secondary_rgb: rgb(121, 163, 177);
+
+$secondary_light : #66bb6a;
+
+$tertiary : blue;
+
+*/

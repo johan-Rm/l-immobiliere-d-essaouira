@@ -1,0 +1,38 @@
+{
+  "name": "Agence Démo — projet immobilier",
+  "legalName": "Agence fictive",
+  "phone": "",
+  "email": "contact@example.invalid",
+  "url": "http://localhost:3000",
+  "primaryImage": {
+    "filename": "logo.svg",
+    "url": "/logo.svg",
+    "alt": "Illustration de démonstration",
+    "dimensions": [
+      240,
+      80
+    ],
+    "hideStamp": true
+  },
+  "secondaryImage": {
+    "filename": "demo.svg",
+    "url": "/demo.svg",
+    "alt": "Illustration de démonstration",
+    "dimensions": [
+      1200,
+      800
+    ],
+    "hideStamp": true
+  },
+  "foundingDate": "2020-01-01",
+  "numberOfProjects": 3,
+  "addresses": [
+    {
+      "address": "Adresse fictive",
+      "streetAddress": "Adresse fictive",
+      "city": "Ville de démonstration",
+      "postcode": "00000",
+      "country": "Démonstration"
+    }
+  ]
+}

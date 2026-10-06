@@ -1,0 +1,31 @@
+{
+  "@id": "/api/real_estate_agents/demo",
+  "id": 1,
+  "name": "Équipe de démonstration",
+  "description": "Profil fictif",
+  "phone": "",
+  "email": "contact@example.invalid",
+  "primaryImage": {
+    "filename": "avatar.svg",
+    "url": "/avatar.svg",
+    "alt": "Illustration de démonstration",
+    "dimensions": [
+      1200,
+      800
+    ],
+    "hideStamp": true
+  },
+  "person": {
+    "firstname": "Alex",
+    "lastname": "Démo",
+    "phone": "",
+    "email": "contact@example.invalid",
+    "jobTitle": "Conseiller",
+    "position": {
+      "slug": "conseiller",
+      "name": "Conseiller",
+      "isActive": true
+    },
+    "contactRole": "transactions"
+  }
+}

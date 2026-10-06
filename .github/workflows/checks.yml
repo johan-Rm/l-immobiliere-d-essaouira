@@ -1,0 +1,54 @@
+name: Static checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check repository hygiene and syntax
+        run: bash scripts/check.sh
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan the complete published history
+        run: docker run --rm -v "$PWD:/scan:ro" ghcr.io/gitleaks/gitleaks:v8.30.1 git /scan --redact --no-banner
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tests/demo/package-lock.json
+      - name: Prepare fictitious exports
+        run: python3 scripts/prepare-demo.py
+      - name: Build and start the frontend demonstration
+        run: docker compose -f docker-compose.demo.yml up -d --build
+      - name: Wait for the site compilation
+        run: |
+          for attempt in $(seq 1 60); do
+            if curl --silent --fail --max-time 10 http://localhost:3000/ --output /dev/null; then
+              exit 0
+            fi
+            sleep 3
+          done
+          docker compose -f docker-compose.demo.yml logs frontend
+          exit 1
+      - name: Install browser tests
+        run: |
+          npm ci --prefix tests/demo
+          cd tests/demo
+          npx playwright install --with-deps chromium
+      - name: Check demonstration journeys
+        run: npm test --prefix tests/demo
+      - name: Stop demonstration containers
+        if: always()
+        run: docker compose -f docker-compose.demo.yml down

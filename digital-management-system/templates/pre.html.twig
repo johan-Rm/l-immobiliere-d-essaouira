@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            <pre>
+            {% for value in content %}
+                <li>{{ value }}</li>
+            {% endfor %}
+            </pre>
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

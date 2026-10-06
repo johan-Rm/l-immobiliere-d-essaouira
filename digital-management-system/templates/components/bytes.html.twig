@@ -1,0 +1,5 @@
+{% set bytes = value %}
+{% set kiloBytes = (bytes / 1024)|round(0) %}
+{% set megaBytes = (kiloBytes / 1024)|round(0) %}
+
+<span class="label">{{ kiloBytes }}k</span>

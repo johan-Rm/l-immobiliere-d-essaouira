@@ -1,0 +1,49 @@
+.page-content-container {
+  min-height: 650px;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 250ms;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.default-enter-active,
+.default-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
+
+.default-enter,
+.default-leave-to {
+  opacity: 0;
+}
+
+
+/*.page-enter-active,
+.page-leave-active,
+.layout-enter-active, 
+.layout-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.page-enter,
+.page-leave-active,
+.layout-enter, 
+.layout-leave-active {
+  opacity: 0
+}*/

@@ -1,0 +1,90 @@
+#!/bin/sh
+today=`date +%Y-%m-%d.%Hh%M`
+
+### CETTE COMMANDE EST EXECUTER LORS DE MISE A JOUR NUXTJS
+commandCheckout="git checkout master"
+commandPull="git pull origin master"
+commandCache="./bin/console cache:clear --env=prod"
+commandPermissionsBackend="sudo chmod -R 777 /var/www/immobiliere-essaouira/symfony-headless-dms/var/cache/ /var/www/immobiliere-essaouira/symfony-headless-dms/var/log/"
+commandCkeditor="./bin/console ckeditor:install"
+commandAssets="./bin/console assets:install --symlink"
+commandPermissionsFrontend="sudo chmod -R 777 /var/www/immobiliere-essaouira/nuxtjs-modern-website/dist/ /var/www/immobiliere-essaouira/nuxtjs-modern-website/lang/"
+
+
+## execute command ##
+$commandCheckout
+## check exit code ##
+if [ $? -eq 0 ]
+then
+    echo "Command was successful : $commandCheckout"
+else
+    echo "Command failed : $commandCheckout"
+    exit 1
+fi
+
+## execute command ##
+$commandPull
+## check exit code ##
+if [ $? -eq 0 ]
+then
+    echo "Command was successful : $commandPull"
+else
+    echo "Command failed : $commandPull"
+    exit 1
+fi
+
+## execute command ##
+$commandCkeditor
+## check exit code ##
+if [ $? -eq 0 ]
+then
+    echo "Command was successful : $commandCkeditor"
+else
+    echo "Command failed : $commandCkeditor"
+    exit 1
+fi
+
+## execute command ##
+$commandAssets
+## check exit code ##
+if [ $? -eq 0 ]
+then
+    echo "Command was successful : $commandAssets"
+else
+    echo "Command failed : $commandAssets"
+    exit 1
+fi
+
+## execute command ##
+$commandCache
+## check exit code ##
+if [ $? -eq 0 ]
+then
+    echo "Command was successful : $commandCache"
+else
+    echo "Command failed : $commandCache"
+    exit 1
+fi
+
+## execute command ##
+$commandPermissionsBackend
+## check exit code ##
+if [ $? -eq 0 ]
+then
+    echo "Command was successful : $commandPermissionsBackend"
+else
+    echo "Command failed : $commandPermissionsBackend"
+    exit 1
+fi
+
+
+## execute command ##
+$commandPermissionsFrontend
+## check exit code ##
+if [ $? -eq 0 ]
+then
+    echo "Command was successful : $commandPermissionsFrontend"
+else
+    echo "Command failed : $commandPermissionsFrontend"
+fi
+exit 0

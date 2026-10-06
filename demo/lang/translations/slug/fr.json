@@ -1,0 +1,28 @@
+{
+  "webPage": {
+    "accueil": "accueil",
+    "lagence": "lagence",
+    "contact": "contact",
+    "nos-services": "nos-services",
+    "faq": "faq",
+    "achat-vente-immobilier": "achat-vente-immobilier",
+    "location-immobilier": "location-immobilier"
+  },
+  "article": {
+    "bienvenue-demo": "bienvenue-demo",
+    "lagence": "lagence",
+    "nos-bureaux-demo": "nos-bureaux-demo"
+  },
+  "accommodation": {
+    "bien-demo-1": "bien-demo-1",
+    "bien-demo-2": "bien-demo-2",
+    "bien-demo-3": "bien-demo-3"
+  },
+  "accommodationType": {
+    "appartement": "appartement"
+  },
+  "tag": {
+    "conseils": "conseils",
+    "nos-services": "nos-services"
+  }
+}

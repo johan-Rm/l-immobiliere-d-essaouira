@@ -1,0 +1,222 @@
+{
+  "original": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "grid": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "grid_nostamp": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "grid_small": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "grid_small_nostamp": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "large": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "large_nostamp": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "vertical": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "vertical_nostamp": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "vertical_large": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "vertical_large_nostamp": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "team_square": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "team_square_medium": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "team_square_small": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "blog_horizontal": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "blog_horizontal_small": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "blog": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "blog_vertical": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "carousel": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "carousel_medium": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "carousel_small": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  },
+  "mini_thumbnail": {
+    "filters": {
+      "thumbnail": {
+        "size": [
+          1200,
+          800
+        ]
+      }
+    }
+  }
+}

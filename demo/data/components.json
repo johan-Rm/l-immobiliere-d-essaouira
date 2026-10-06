@@ -1,0 +1,21 @@
+{
+  "hydra:member": [
+    {
+      "slug": "bienvenue-demo"
+    },
+    {
+      "slug": "lagence"
+    },
+    {
+      "slug": "lagence"
+    },
+    {
+      "slug": "bienvenue-demo"
+    },
+    {
+      "slug": "nos-bureaux-demo"
+    }
+  ],
+  "hydra:totalItems": 5,
+  "hydra:view": {}
+}

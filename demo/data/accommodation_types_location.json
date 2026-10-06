@@ -1,0 +1,13 @@
+{
+  "hydra:member": [
+    {
+      "slug": "appartement",
+      "name": "Appartement",
+      "isActive": true,
+      "id": 1,
+      "isLocation": true
+    }
+  ],
+  "hydra:totalItems": 1,
+  "hydra:view": {}
+}

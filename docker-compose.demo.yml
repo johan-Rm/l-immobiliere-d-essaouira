@@ -1,0 +1,13 @@
+# Frontend-only demonstration; no production database or credentials.
+services:
+  frontend:
+    build: ./nuxt-modern-website
+    ports:
+      - "127.0.0.1:${DEMO_PORT:-3000}:3000"
+    environment:
+      HOST: 0.0.0.0
+      DEMO_MODE: "true"
+    volumes:
+      - ./nuxt-modern-website:/app
+      - ./demo:/demo:ro
+      - /app/node_modules

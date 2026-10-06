@@ -1,0 +1,24 @@
+nelmio_cors:
+    defaults:
+        allow_credentials: false
+        allow_origin: [ 'http://127.0.0.1:3000', 'http://127.0.0.1:3021', 'https://www.immobiliere-essaouira.com', 'https://immobiliere-essaouira.com', 'https://immobiliere-essaouira.graines-digitales.fr', 'http://immobiliere-essaouira-dev.graines-digitales.online', 'https://cdn.immobiliere-essaouira.com' ]
+        allow_headers: []
+        allow_methods: []
+        expose_headers: []
+        max_age: 0
+        hosts: []
+        origin_regex: false
+        forced_allow_origin_value: ~
+    paths:
+        '^/api/':
+            allow_origin: [ 'http://127.0.0.1:3000', 'http://127.0.0.1:3021', 'https://www.immobiliere-essaouira.com', 'https://immobiliere-essaouira.com', 'https://immobiliere-essaouira.graines-digitales.fr', 'http://immobiliere-essaouira-dev.graines-digitales.online', 'https://cdn.immobiliere-essaouira.com' ]
+            allow_headers: ['Content-Type', 'Authorization']
+            allow_methods: ['POST', 'PUT', 'GET', 'OPTION']
+            max_age: 3600
+        '^/':
+            origin_regex: true
+            allow_origin: [ 'http://127.0.0.1:3000', 'http://127.0.0.1:3021', 'https://www.immobiliere-essaouira.com', 'https://immobiliere-essaouira.com', 'https://immobiliere-essaouira.graines-digitales.fr', 'http://immobiliere-essaouira-dev.graines-digitales.online', 'https://cdn.immobiliere-essaouira.com' ]
+            allow_headers: ['X-Custom-Auth', 'Content-Type', 'Authorization']
+            allow_methods: ['POST', 'PUT', 'GET', 'OPTION']
+            max_age: 3600
+            # hosts: ['^api\.']

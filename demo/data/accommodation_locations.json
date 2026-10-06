@@ -1,0 +1,11 @@
+{
+  "hydra:member": [
+    {
+      "slug": "ville-demo",
+      "name": "Ville de démonstration",
+      "isActive": true
+    }
+  ],
+  "hydra:totalItems": 1,
+  "hydra:view": {}
+}

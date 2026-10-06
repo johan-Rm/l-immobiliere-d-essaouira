@@ -1,0 +1,93 @@
+parameters:
+    cms.title: 'Immobilière Essaouira CMS'
+    api.title: 'Immobilière Essaouira API'
+    siteweb.title: "Site web l'Immobilière d'Essaouira"
+
+    view.host:  '%env(URL_VIEW)%'
+    cdn.host:   '%env(URL_CDN)%' # = assets host
+    api.host:   '%env(URL_API)%'
+    view.project_dir: '%env(DIRECTORY_VIEW)%'
+    DIRECTORY_RESOURCES: '%env(DIRECTORY_RESOURCES)%'
+    DIRECTORY_STAMP: '%env(DIRECTORY_STAMP)%'
+
+    assets.path: '%DIRECTORY_RESOURCES%'
+    # assets.path: '%view.project_dir%/dist'
+    assets.pdf.path: '%assets.path%/pdf'
+
+
+    assets.media.folder: uploads/media/files
+    assets.pdf.folder: uploads/pdf/files
+    assets.document.folder: uploads/document/files
+    assets.cache_prefix: 'media/cache'
+
+    assets.images.path: '%assets.path%/%assets.media.folder%'
+    
+    # service translator : voir si on peut mettre une url plutot ..
+    # /home/www/graines-digitales/immobiliere-essaouira/cms/src/Service/Translation/Translator.php
+    view.lang.translations.path: '%view.project_dir%/lang/translations'
+    app.lang.translations.path: '%kernel.project_dir%/translations'
+    view.lang.translations.slug.path: '%view.project_dir%/lang/translations/slug'
+    view.data.path: '%view.project_dir%/data'
+
+    # /home/www/graines-digitales/immobiliere-essaouira/cms/src/Command/GenerateNuxtJsRoutesCommand.php
+    # /home/www/graines-digitales/immobiliere-essaouira/cms/src/Service/NuxtJS/Router.php
+    view.update_dir: '%view.project_dir%/update'
+    view.update.nuxt_routes.path: '%view.update_dir%/nuxt_routes'
+    view.update.pdf_files.path: '%view.update_dir%/pdf_files'
+    view.update.json_data.path: '%view.update_dir%/json_data'
+    view.update.media_images.path: '%view.update_dir%/media_images'
+
+
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: '%env(MAILER_USER)%'
+    mailer_developer: '%env(CONTACT_EMAIL)%'
+    mailer_admin: '%env(CONTACT_EMAIL)%'
+    mailer_users: [ '%env(CONTACT_EMAIL)%' ]
+    mailer_password: null
+    locale: 'fr'
+
+
+
+
+framework:
+    secret: '%env(APP_SECRET)%'
+    default_locale: '%locale%'
+    #csrf_protection: true
+    #http_method_override: true
+
+    # Enables session support. Note that the session will ONLY be started if you read or write from it.
+    # Remove or comment this section to explicitly disable session support.
+    session:
+        handler_id: ~
+        cookie_secure: auto
+        cookie_samesite: lax
+
+    esi: true
+    #fragments: true
+    php_errors:
+        log: true
+    assets:
+        packages:
+            medias:
+                base_urls: [ '%cdn.host%/%assets.media.folder%' ]
+            medias_grid_nostamp_small:
+                base_urls: [ '%cdn.host%/media/cache/grid_small_nostamp/%assets.media.folder%' ]
+            medias_vertical_nostamp_small:
+                base_urls: [ '%cdn.host%/media/cache/vertical_nostamp/%assets.media.folder%' ]
+            medias_large_nostamp:
+                base_urls: [ '%cdn.host%/media/cache/large_nostamp/%assets.media.folder%' ]
+            documents:
+                base_urls: [ '%cdn.host%/%assets.document.folder%' ]
+    templating:
+        engines: ['twig', 'php']
+    # translator:
+    #     fallbacks: ['en']
+
+    # http_client:
+    #     default_options:
+    #         retry_failed:
+    #             verify_peer: false
+
+moskalyovd_fcm:
+    server_key: '%env(FCM_SERVER_KEY)%'
